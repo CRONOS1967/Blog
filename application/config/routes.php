@@ -53,7 +53,7 @@ $route['default_controller'] = 'pages/views';
 
 $route['posts'] = 'posts/index';
 $route['posts/create'] = 'posts/create';
-$route['posts/(:any)'] = 'posts/views/$1';
+$route['posts/(:any)'] = 'posts/view/$1';
 
 
 $route['categories'] = 'categories/index';

@@ -30,7 +30,7 @@ $this->load->view('templates/mainmenu'); ?>
                                </div>
                            </div>
                            <div class="my-1 py-25">
-                                            <a href="javascript:void(0);">
+                                            <a href="<?= site_url("/categories/post/".$post["category_id"])?>">
                                                 <div class="badge badge-pill badge-light-danger mr-50"><?= $post['category']; ?></div>
                                             </a>
                                             

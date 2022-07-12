@@ -14,7 +14,7 @@ class Category_model extends CI_Model
     public function create()
     {
         $data = [
-            "category" => $this->input->post('name')
+            "category" => $this->db->escape($this->input->post('name'))
         ];
         return $this->db->insert('categories', $data);
     }

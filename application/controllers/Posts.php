@@ -18,6 +18,7 @@ class Posts extends CI_Controller
     public function view($id = null)
     {
         $data['post'] = $this->post_model->get_posts($id);
+        $data['comments']= $this->comment_model->get_comments($id);
         (empty($data['post'])) ? show_404() : '';
         $data['title'] = ucfirst($data['post']['title']);
 

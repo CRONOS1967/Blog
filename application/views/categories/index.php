@@ -10,6 +10,7 @@ $this->load->view('templates/mainmenu'); ?>
         <div class="card">
             <div class="card-header">
                 <h4 class="card-title"><?=$title?></h4>
+                <a href="<?= site_url('/categories/create') ;?>" class="card-title btn btn-primary">Create</a>
             </div>
             
             <div class="table-responsive">
